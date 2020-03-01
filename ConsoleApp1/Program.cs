@@ -14,14 +14,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            for (int x = 0; x < 10;x++)
-            {
-
-                Console.Write(x +' ');
-            }
-
-            //Output:32333435363738394041
-            //number of ' ' is 32
+            double d1 = 1.000001;
+            double d2 = 0.000001;
+            Console.WriteLine((d1-d2).Equals(1.0));
+            //浮点运算比较复杂
+            //https://blog.csdn.net/u012557765/article/details/81869391
             Console.Read();
 
         }       
