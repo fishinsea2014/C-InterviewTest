@@ -13,28 +13,17 @@ namespace ConsoleApp1
     {        
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Sample s = new Sample();
-            s.Print();
-            ISample i = s;
-            i.Print();
+            Console.WriteLine("C# interview test");
+            int val = (byte)+(char)-(int)+(long)-2;
+            
+            Console.WriteLine(val);
+
 
             Console.Read();
 
         }
 
-        public interface ISample
-        {
-            void Print(string val = "Interface Executed");
-        }
-
-        public class Sample : ISample
-        {
-            public void Print (string val = "Class Executed")
-            {
-                Console.WriteLine(val);
-            }
-        }
+        
       
     }
     
