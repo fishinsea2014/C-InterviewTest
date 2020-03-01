@@ -10,15 +10,21 @@ namespace ConsoleApp1
     /// https://www.techbeamers.com/csharp-coding-interview-questions-developers/
     /// </summary>
     class Program
-    {        
+    {   
+        public Program(object o)
+        {
+            Console.WriteLine("Object argument");
+        }
+
+        public Program(double[] arr)
+        {
+            Console.WriteLine("double array argument");
+        }
+        
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            double d1 = 1.000001;
-            double d2 = 0.000001;
-            Console.WriteLine((d1-d2).Equals(1.0));
-            //浮点运算比较复杂
-            //https://blog.csdn.net/u012557765/article/details/81869391
+            new Program(null);
             Console.Read();
 
         }       
