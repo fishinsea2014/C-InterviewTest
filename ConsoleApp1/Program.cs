@@ -14,11 +14,8 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            string str1 = "\U0010FADE";
-            Console.WriteLine(str1+","+str1.Length);
-            string str2 = "\U0000FADE"; //\U0000 is Empty
-            Console.WriteLine(str2 + "," + str1.Length);
-
+            int[,] multiDimArray = { { 1, 3 }, { 6, 8 } };
+            Console.WriteLine(multiDimArray[0,0]+", length"+multiDimArray.Length);
             Console.Read();
 
         }
