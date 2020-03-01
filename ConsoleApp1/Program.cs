@@ -11,20 +11,15 @@ namespace ConsoleApp1
     /// </summary>
     class Program
     {   
-        public Program(object o)
-        {
-            Console.WriteLine("Object argument");
-        }
-
-        public Program(double[] arr)
-        {
-            Console.WriteLine("double array argument");
-        }
         
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            new Program(null);
+            Console.WriteLine("H"+'I');
+            Console.WriteLine('h' +'i');
+            //output: 
+            //HI
+            //209
             Console.Read();
 
         }       
