@@ -14,10 +14,10 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            int val = (byte)+(char)-(int)+(long)-2;
-            
-            Console.WriteLine(val);
-
+            string str1 = "\U0010FADE";
+            Console.WriteLine(str1+","+str1.Length);
+            string str2 = "\U0000FADE"; //\U0000 is Empty
+            Console.WriteLine(str2 + "," + str1.Length);
 
             Console.Read();
 
