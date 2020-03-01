@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
 
 namespace ConsoleApp1
 {
@@ -15,11 +16,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            Console.WriteLine("H"+'I');
-            Console.WriteLine('h' +'i');
-            //output: 
-            //HI
-            //209
+
+            string str1 = "abc";
+            string str2 = "abc";
+            Console.WriteLine(str1==str2);
+            Console.WriteLine(str1.Equals(str2));
+            StringBuilder str3 = new StringBuilder("abc");
+            Console.WriteLine(str1.Equals(str3));
             Console.Read();
 
         }       
