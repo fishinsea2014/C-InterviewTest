@@ -14,16 +14,17 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            float num = 45;
-            var div = num / 0;
-            // int, long divided by 0 get DivideByZeroException error
-            // float, double divided by 0 get Infinity
-            Console.WriteLine(div);
+            for (int x = 0; x < 10;x++)
+            {
+
+                Console.Write(x +' ');
+            }
+
+            //Output:32333435363738394041
+            //number of ' ' is 32
             Console.Read();
 
-        }
-
-        
+        }       
       
     }
     
