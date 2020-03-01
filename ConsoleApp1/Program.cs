@@ -14,8 +14,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("C# interview test");
-            int[,] multiDimArray = { { 1, 3 }, { 6, 8 } };
-            Console.WriteLine(multiDimArray[0,0]+", length"+multiDimArray.Length);
+            float num = 45;
+            var div = num / 0;
+            // int, long divided by 0 get DivideByZeroException error
+            // float, double divided by 0 get Infinity
+            Console.WriteLine(div);
             Console.Read();
 
         }
